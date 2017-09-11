@@ -1,0 +1,1133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jiguo</title>
+    <style>
+        a{
+            text-decoration: none;
+            /*color: #665344;*/
+        }
+        .outer1{
+            width: 100%;
+            height: 85px;
+            background-color: #ffffff;
+            position: relative;
+        }
+        .center1{
+            width: 1080px;
+            height: 65px;
+            margin-left: 425px;
+            position: absolute;
+            top: 0;
+        }
+        .logonew{
+            height: 50px;
+            display: inline-block;
+            position: absolute;
+            left:0;
+            bottom:0;
+            border: none;
+            float: left;
+        }
+        .title{
+            float: left;
+            position: absolute;
+            left: 160px;
+            bottom: 0px;
+            display: inline-block;
+            font-size: 20px;
+        }
+        .title>a{
+            margin-right:55px;
+            text-decoration: none;
+            color: #665344;
+        }
+       .center7  a:link{
+            color: #a6b1b5;
+        }
+        a:hover{
+            color: orangered;
+        }
+        .input{
+            height: 21px;
+            line-height: 21px;
+            float: left;
+            background-color: white;
+        }
+        .dynamic{
+            float: left;
+            display: inline-block;
+            position: absolute;
+            right: 200px;
+            bottom: 0;
+        }
+        .search{
+            width: 27px;
+            height: 27px;
+            position: absolute;
+            bottom: 0;
+        }
+        .search-img{
+            width: auto;
+            height: auto;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+        .register{
+            border-color: red;
+            background: white;
+            font-size: 15px;
+            text-align: center;
+            color: red;
+            position: absolute;
+            bottom: 0;
+            right: 10px;
+        }
+        .center2{
+            width: 1920px;
+            position: relative;
+        }
+        .huanxiang{
+            width: 300px;
+            height: 200px;
+            float: right;
+            position: absolute;
+            right: 415px;
+            top: 30px;
+        }
+        .text{
+            font-size: 36px;
+            color: white;
+        }
+        .right1{
+            margin-right: 0;
+        }
+        .span1{
+            margin: 20px 0 0 20px;
+            background: navajowhite;
+            color: white;
+            font-size: 16px;
+            opacity: 0.7;
+            display: inline-block;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            border-radius: 20px;
+        }
+        .countDown{
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            color: white;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+        .div1 {
+            width: 200px;
+            height: 40px;
+            background: rgb(255, 50, 80);
+            margin-top: 15px;
+            margin-left: 50px;
+            text-align: center;
+            border-radius: 20px;
+        }
+        .apply-inner{
+
+            line-height: 40px;
+            text-decoration: none;
+            background: red;
+            text-align: center;
+        }
+        .outer3{
+            width: 1920px;
+            height:420px;
+            background: #ffffff;
+            float: left;
+        }
+        .center3{
+            width: 1380px;
+            margin: 0 auto;
+            height: 400px;
+        }
+        .prev{
+            margin-top: 180px;
+            float: left;
+        }
+        .next{
+            margin-top: 180px;
+            float: left;
+        }
+        .center3-inner{
+            width: 1280px;
+            height: 400px;
+            margin: 0 auto;
+            float: left;
+        }
+        .temp{
+            margin: 15px 0;
+            margin:10px;
+            float: left;
+        }
+        .hotTrial{
+            width: 1280px;
+            height: 380px;
+            float: left;
+        }
+        .hot{
+            float: left;
+            background: whitesmoke;
+            width: 300px;
+            height: 310px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+        .hot-inner{
+            width: 300px;
+            height: 185px;
+            position: relative;
+        }
+        .hotp{
+            width: 300px;
+            height: 175px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        .first{
+             position: absolute;
+             right: 0;
+             top: 0;
+             background: red;
+             color: white;
+             font-size: 14px;
+             width: 40px;
+             height: 20px;
+             line-height: 20px;
+             text-align: center;
+             border-radius: 10px ;
+         }
+        .experi{
+            position: absolute;
+            right: 0;
+            top: 0;
+            background: lightyellow;
+            color: orange;
+            font-size: 14px;
+            width: 80px;
+            height: 20px;
+            line-height: 20px;
+            text-align: center;
+            border-radius: 10px;
+        }
+        .intro{
+            width: 300px;
+            height: 125px;
+            text-align: center;
+            position: relative;
+            top:10px;
+        }
+        .intro-name{
+            margin-left: 15px;
+            margin-right: 15px;
+            font-size: 16px;
+            color:#52495e;
+        }
+        .price-count{
+            width: 88px;
+            height: 28px;
+            margin: 0 auto;
+            color: red;
+            font-size: 14px;
+        }
+        .price-countexperi{
+            width: 88px;
+            height: 28px;
+            margin: 0 auto;
+            color: limegreen;
+            font-size: 14px;
+        }
+        .b{
+            width: 40px;
+            height: 26px;
+            display: inline-block;
+        }
+        .border-b{
+            border-bottom: 1px solid red;
+            border-top: 1px solid red;
+            border-right: 1px solid red;
+            border-left: 1px solid red;
+            margin-top: 8px;
+            border-radius: 5px;
+        }
+        .border-be{
+            border-bottom: 1px solid limegreen;
+            border-top: 1px solid limegreen;
+            border-right: 1px solid limegreen;
+            border-left: 1px solid limegreen;
+            margin-top: 8px;
+            border-radius: 5px;
+        }
+        .applys{
+            margin: 8px auto;
+            font-size: 16px;
+            width: 70px;
+            height: 20px;
+        }
+        .time{
+            margin: 8px auto;
+            font-size: 15px;
+            color: red;
+            width: 90px;
+            height: 20px;
+        }
+        .a3{
+            color: limegreen;
+            font-size: 15px;
+            position: absolute;
+            bottom: 15px;
+            left: 100px;
+            text-decoration: none;
+        }
+        .outer4{
+            width: 1920px;
+            height:770px;
+            background: #f5f5f5;
+            float: left;
+        }
+        .center4{
+            width: 1280px;
+            margin: 0 auto;
+            height: 770px;
+            overflow: hidden;
+        }
+        .report{
+            float: left;
+        }
+        .bg{
+            float: left;
+        }
+        .bgp{
+            background: white;
+            width: 300px;
+            height: 300px;
+            float: left;
+            margin: 10px;
+            border-radius: 10px;
+        }
+        .bg-img{
+            width: 300px;
+            height: 175px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        .bg-text{
+            margin-left: 15px;
+            margin-right: 15px;
+            font-size: 16px;
+            color: #475152;
+        }
+        .decri{
+            position: relative;
+            margin-top: 20px;
+        }
+        .bg-name{
+            margin-left: 15px;
+            color: lightgray;
+            font-size: 14px;
+            display: inline-block;
+        }
+        .zr{
+            position: absolute;
+            right: 15px;
+            display: inline-block;
+        }
+        .outer5{
+            width: 1920px;
+            height:450px;
+            background: #ffffff;
+            float: left;
+        }
+        .center5{
+            width: 1280px;
+            margin: 0 auto;
+            height: 450px;
+        }
+        .report{
+            float: left;
+        }
+        .g{
+            float: left;
+        }
+        .gp-i{
+            float: left;
+            border-radius: 10px;
+        }
+        .gp{
+            background: white;
+            width: 300px;
+            height: 300px;
+            margin: 10px 10px 0 10px;
+            position: relative;
+            border-radius: 10px;
+        }
+        .g-img{
+            width: 300px;
+            height: 175px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        .g-text{
+            margin-left: 15px;
+            margin-right: 15px;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        .xr{
+            margin-top: 40px;
+            position: absolute;
+            right: 15px;
+            display: inline-block;
+        }
+        .listbg{
+            width: 300px;
+            margin-left: 10px;
+        }
+        .outer6{
+            width: 1920px;
+            height:1480px;
+            background: #f5f5f5;
+            float: left;
+        }
+        .center6{
+            width: 1280px;
+            margin: 0 auto;
+            height: 1480px;
+            overflow: hidden;
+            position: relative;
+        }
+        .report{
+            font-size: 20px;
+            float: left;
+            margin-left: 10px;
+        }
+        .a4{
+            color: red;
+            font-size: 15px;
+            margin-top: 30px;
+            float: right;
+        }
+        .k{
+            float: left;
+        }
+        .kp{
+            background: white;
+            width: 300px;
+            height: 300px;
+            float: left;
+            margin: 10px;
+            border-radius: 10px;
+        }
+        .k-img{
+            width: 300px;
+            height: 175px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        .k-text1{
+            margin-left: 15px;
+            font-size: 16px;
+            margin-bottom: 4px;
+        }
+        .k-text2{
+            margin-left: 15px;
+            color: lightgray;
+            font-size: 14px;
+        }
+        .decri{
+            position: relative;
+        }
+        .k-price{
+            margin-top: 10px;
+            margin-left: 15px;
+            color: red;
+            font-size: 16px;
+            display: inline-block;
+        }
+        .xr{
+            margin-top: 10px;
+            position: absolute;
+            right: 15px;
+            display: inline-block;
+        }
+        .a5{
+            width: 150px;
+            height: 30px;
+            line-height: 30px;
+            position: absolute;
+            bottom: 50px;
+            left: 564px;
+        }
+        .outer7{
+            width: 1920px;
+            height:340px;
+            background: #666666;
+            float: left;
+        }
+        .center7{
+            width: 1000px;
+            margin: 0 auto;
+            height: 310px;
+            overflow: hidden;
+            position: relative;
+            padding-top: 30px;
+        }
+        .up{
+            float: left;
+        }
+        .down{
+            width: 30px;
+            height: 30px;
+            background: lightgray;
+            float: left;
+            position: absolute;
+            right: 0;
+            bottom: 40px;
+        }
+        .lowest{
+            position: absolute;
+            bottom: 10px;
+            left: 340px;
+            float: left;
+            font-size: 12px;
+            color: #a6b1b5;
+        }
+        .QR{
+            float: left;
+            margin-right: 20px;
+            width: 100px;
+            height: 100px;
+        }
+        .up2{
+            float: left;
+            margin-right: 20px;
+            color: #a6b1b5;
+        }
+        .up3{
+            float: left;
+            margin-right: 20px;
+        }
+        .up4{
+            float: left;
+            margin-right: 20px;
+        }
+        .up5{
+            float: left;
+            margin-right: 20px;
+        }
+        .up6{
+            float: left;
+            margin-right: 20px;
+        }
+        .up4l{
+            float: left;
+            margin-right: 20px;
+        }
+        .up4r{
+            float: left;
+        }
+        .back{
+            width: 24px;
+            height: 12px;
+            margin: 8px 3px 8px 3px;
+        }
+        .a7{
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+        <div class="outer1">
+            <div class="center1">
+                <img class="logonew" src="../resource/img/logonew.png" alt="">
+                <div class="title">
+                    <a style="color: #e17d7b" href="#">首页</a>
+                    <a href="#">酷玩</a>
+                    <a href="#">导购</a>
+                    <a href="#">试用</a>
+                    <a href="#">报告</a>
+                </div>
+                <div class="dynamic">
+                    <input class="input" type="text">
+                    <button class="search" type="button">
+                        <img class="search-img" src="../resource/img/search.png" alt="">
+                    </button>
+                </div>
+                <button class="register" type="button">注册</button>
+            </div>
+        </div>
+        <div class="outer2">
+            <div class="center2">
+                <img src="../resource/img/original.jpg" alt="">
+                <div class="huanxiang">
+                    <div class="text"> 幻响小贝HiFi音箱</div>
+                    <div class="right1">
+                        <div class="rs">
+                            <span class="span1" style="width: 90px;">126人申请</span>
+                            <span class="span1" style="width: 50px">¥599</span>
+                            <span class="span1" style="width: 44px">20台</span>
+                        </div>
+                    <div class="countDown">申请时间剩余：13天5小时37分钟</div>
+                        <div class="div1">
+                            <!--<div class="apply">-->
+                            <a class="apply-inner" style ="color: white;" href="#">立即申请</a>
+                            <!--</div>-->
+                        </div>
+                    </div>
+                    <!--<button  type="button">立即申请</button>-->
+                    <!--<input class="apply" type="button" value="立即申请">-->
+
+
+                </div>
+            </div>
+        </div>
+        <!--热门试用-->
+        <div class="outer3">
+            <div class="center3">
+                <img class="prev" src="../resource/img/prev.png" alt="">
+                <div class="center3-inner">
+                    <h4 class="temp">热门试用</h4><br>
+                    <div class="hotTrial">
+                        <div class="hot">
+                            <div class="hot-inner">
+                                <img class="hotp" src="../resource/img/hot9.jpg" alt=""><br>
+                                <div class="first">首发</div>
+                            </div>
+                            <div class="intro">
+                                <span class="intro-name">巴慕达The Toaster烤面包机</span><br>
+                                <div class="price-count">
+                                    <div class="b">
+                                        <div class="border-b">
+                                            <div style="width: 38px;height: 24px;line-height: 24px">¥512</div>
+                                        </div>
+                                    </div>
+                                    <div class="b">
+                                        <div class="border-b">
+                                            <div style="width: 38px;height: 24px;line-height: 24px">20台</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="applys">
+                                    <span style="color: red">1392</span><span style="color: black">申请</span>
+                                </div>
+                                <div class="time">剩余时间2天</div>
+                            </div>
+                        </div>
+                        <div class="hot">
+                            <div class="hot-inner">
+                                <img class="hotp" src="../resource/img/hot10.jpg" alt=""><br>
+                                <div class="experi">体验师专享</div>
+                            </div>
+                            <div class="intro">
+                                <span class="intro-name">Osprey小鹰户外运动专享腰包</span><br>
+                                <div class="price-countexperi">
+                                    <div class="b">
+                                        <div class="border-be">
+                                            <div style="width: 38px;height: 24px;line-height: 24px;">¥512</div>
+                                        </div>
+                                    </div>
+                                    <div class="b">
+                                        <div class="border-be">
+                                            <div style="width: 38px;height: 24px;line-height: 24px;">20台</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="applys">
+                                    <span style="color: red">1392</span><span style="color: black">申请</span>
+                                </div>
+                                <a class="a3" style="color: limegreen" href="#">查看试用名单</a>
+                            </div>
+                        </div>
+                        <div class="hot">
+                            <div class="hot-inner">
+                                <img class="hotp" src="../resource/img/hot11.jpg" alt=""><br>
+                                <div class="first">首发</div>
+                            </div>
+                            <div class="intro">
+                                <span class="intro-name">Liquid Image338运动摄像眼镜</span><br>
+                                <div class="price-count">
+                                    <div class="b">
+                                        <div class="border-b">
+                                            <div style="width: 38px;height: 24px;line-height: 24px">¥512</div>
+                                        </div>
+                                    </div>
+                                    <div class="b">
+                                        <div class="border-b">
+                                            <div style="width: 38px;height: 24px;line-height: 24px">20台</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="applys">
+                                    <span style="color: red">1392</span><span style="color: black">申请</span>
+                                </div>
+                                <div class="time">剩余时间2天</div>
+                            </div>
+                        </div>
+                        <div class="hot">
+                            <div class="hot-inner">
+                                <img class="hotp" src="../resource/img/hot12.jpg" alt=""><br>
+                                <div class="first">首发</div>
+                            </div>
+                            <div class="intro">
+                                <span class="intro-name">巴慕达The Toaster烤面包机</span><br>
+                                <div class="price-count">
+                                    <div class="b">
+                                        <div class="border-b">
+                                            <div style="width: 38px;height: 24px;line-height: 24px">¥512</div>
+                                        </div>
+                                    </div>
+                                    <div class="b">
+                                        <div class="border-b">
+                                            <div style="width: 38px;height: 24px;line-height: 24px">20台</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="applys">
+                                    <span style="color: red">1392</span><span style="color: black">申请</span>
+                                </div>
+                                <div class="time">剩余时间2天</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img class="next" src="../resource/img/next.png" alt="">
+            </div>
+        </div>
+        <!--报告精选-->
+        <div class="outer4">
+            <div class="center4">
+                <h4 class="report">报告精选</h4>
+                <a class="a4 more" href="###">查看更多
+                    <img src="../resource/img/readMore.png" alt="">
+                </a>
+                <div class="bg">
+                    <div class="bgp">
+                        <img class="bg-img" src="../resource/img/bg1.jpg" alt="">
+                        <div class="bg-text">空气净化器里面学问多得惊呆你，你选对了吗？</div>
+                        <div class="decri">
+                            <div class="bg-name">•娴娴</div>
+                            <span class="zr">
+                            <img style="width: 15px;height: 15px" src="../resource/img/zan.png" alt=""><span style="font-size: 15px;color: lightgray">3</span>
+                            <img style="width: 15px;height: 15px" src="../resource/img/reply.png" alt=""><span style="font-size: 15px;color: lightgray">3</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="bgp">
+                        <img class="bg-img" src="../resource/img/bg2.jpg" alt="">
+                        <div class="bg-text">怎么骑都不会累的智能自行车：云马C1试骑体验</div>
+                        <div class="decri">
+                            <div class="bg-name">•敏敏</div>
+                            <span class="zr">
+                            <img style="width: 15px;height: 15px" src="../resource/img/zan.png" alt=""><span style="font-size: 15px;color: lightgray">3</span>
+                            <img style="width: 15px;height: 15px" src="../resource/img/reply.png" alt=""><span style="font-size: 15px;color: lightgray">3</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="bgp">
+                        <img class="bg-img" src="../resource/img/bg3.jpg" alt="">
+                        <div class="bg-text">风光大片信手拈来!vivo X6Plus不只是快，还是一台拍照利器</div>
+                        <div class="decri">
+                            <div class="bg-name">•威威</div>
+                            <span class="zr">
+                            <img style="width: 15px;height: 15px" src="../resource/img/zan.png" alt=""><span style="font-size: 15px;color: lightgray">3</span>
+                            <img style="width: 15px;height: 15px" src="../resource/img/reply.png" alt=""><span style="font-size: 15px;color: lightgray">3</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="bgp">
+                        <img class="bg-img" src="../resource/img/bg4.jpg" alt="">
+                        <div class="bg-text">声音不是最优秀，但它形音完美的结合，足够打动人心</div>
+                        <div class="decri">
+                            <div class="bg-name">•思思</div>
+                            <span class="zr">
+                            <img style="width: 15px;height: 15px" src="../resource/img/zan.png" alt=""><span style="font-size: 15px;color: lightgray">3</span>
+                            <img style="width: 15px;height: 15px" src="../resource/img/reply.png" alt=""><span style="font-size: 15px;color: lightgray">3</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="bgp">
+                        <img class="bg-img" src="../resource/img/bg4.jpg" alt="">
+                        <div class="bg-text">声音不是最优秀，但它形音完美的结合，足够打动人心</div>
+                        <div class="decri">
+                            <div class="bg-name">•苏苏</div>
+                            <span class="zr">
+                            <img style="width: 15px;height: 15px" src="../resource/img/zan.png" alt=""><span style="font-size: 15px;color: lightgray">3</span>
+                            <img style="width: 15px;height: 15px" src="../resource/img/reply.png" alt=""><span style="font-size: 15px;color: lightgray">3</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="bgp">
+                        <img class="bg-img" src="../resource/img/bg3.jpg" alt="">
+                        <div class="bg-text">风光大片信手拈来!vivo X6Plus不只是快，还是一台拍照利器</div>
+                        <div class="decri">
+                            <div class="bg-name">•苏苏</div>
+                            <span class="zr">
+                            <img style="width: 15px;height: 15px" src="../resource/img/zan.png" alt=""><span style="font-size: 15px;color: lightgray">3</span>
+                            <img style="width: 15px;height: 15px" src="../resource/img/reply.png" alt=""><span style="font-size: 15px;color: lightgray">3</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="bgp">
+                        <img class="bg-img" src="../resource/img/bg2.jpg" alt="">
+                        <div class="bg-text">怎么骑都不会累的智能自行车：云马C1试骑体验</div>
+                        <div class="decri">
+                            <div class="bg-name">•敏敏</div>
+                            <span class="zr">
+                            <img style="width: 15px;height: 15px" src="../resource/img/zan.png" alt=""><span style="font-size: 15px;color: lightgray">3</span>
+                            <img style="width: 15px;height: 15px" src="../resource/img/reply.png" alt=""><span style="font-size: 15px;color: lightgray">3</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="bgp">
+                        <img class="bg-img" src="../resource/img/bg1.jpg" alt="">
+                        <div class="bg-text">空气净化器里面学问多得惊呆你，你选对了吗？</div>
+                        <div class="decri">
+                            <div class="bg-name">•苏苏</div>
+                            <span class="zr">
+                            <img style="width: 15px;height: 15px" src="../resource/img/zan.png" alt=""><span style="font-size: 15px;color: lightgray">3</span>
+                            <img style="width: 15px;height: 15px" src="../resource/img/reply.png" alt=""><span style="font-size: 15px;color: lightgray">3</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--导购精选-->
+        <div class="outer5">
+            <div class="center5">
+                <h4 class="report">导购精选</h4>
+                <a class="a4 more" href="#">查看更多
+                    <img src="../resource/img/readMore.png" alt="">
+                </a>
+                <div class="g">
+                    <div class="gp-i">
+                        <div class="gp">
+                            <img class="g-img" src="../resource/img/g1.jpg" alt="">
+                            <div class="g-text">花万元把蜗居秒变“豪宅”？这12件家具就能帮你办到</div>
+                            <div class="xr">
+                                <img style="width: 15px;height: 15px" src="../resource/img/xinRedo.png" alt=""><span style="font-size: 15px;color: lightgray">3</span>
+                                <img style="width: 15px;height: 15px" src="../resource/img/reply.png" alt=""><span style="font-size: 15px;color: lightgray">3</span>
+                            </div>
+                        </div>
+                        <img class="listbg" src="../resource/img/listbg.jpg" alt="">
+                    </div>
+                    <div class="gp-i">
+                        <div class="gp">
+                            <img class="g-img" src="../resource/img/g2.jpg" alt="">
+                            <div class="g-text">到底有没有完美的iPhone手机配件，答案都在这里</div>
+                            <span class="xr">
+                                <img style="width: 15px;height: 15px" src="../resource/img/xinRedo.png" alt=""><span style="font-size: 15px;color: lightgray">3</span>
+                                <img style="width: 15px;height: 15px" src="../resource/img/reply.png" alt=""><span style="font-size: 15px;color: lightgray">3</span>
+                            </span>
+                        </div>
+                        <img class="listbg" src="../resource/img/listbg.jpg" alt="">
+                    </div>
+                    <div class="gp-i">
+                        <div class="gp">
+                            <img class="g-img" src="../resource/img/g3.jpg" alt="">
+                            <div class="g-text" style="margin-bottom: 40px">2017，这8支钢笔够你装逼一整年</div>
+                            <span class="xr">
+                                <img style="width: 15px;height: 15px" src="../resource/img/xinRedo.png" alt=""><span style="font-size: 15px;color: lightgray">3</span>
+                                <img style="width: 15px;height: 15px" src="../resource/img/reply.png" alt=""><span style="font-size: 15px;color: lightgray">3</span>
+                            </span>
+                        </div>
+                        <img class="listbg" src="../resource/img/listbg.jpg" alt="">
+                    </div>
+                    <div class="gp-i">
+                        <div class="gp">
+                            <img class="g-img" src="../resource/img/g4.jpg" alt="">
+                            <div class="g-text">他用12年找一把完美剃须刀，给你2万字终极购买指南</div>
+                            <span class="xr">
+                                <img style="width: 15px;height: 15px" src="../resource/img/xinRedo.png" alt=""><span style="font-size: 15px;color: lightgray">3</span>
+                                <img style="width: 15px;height: 15px" src="../resource/img/reply.png" alt=""><span style="font-size: 15px;color: lightgray">3</span>
+                            </span>
+                        </div>
+                        <img class="listbg" src="../resource/img/listbg.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--发现酷玩-->
+        <div class="outer6">
+            <div class="center6">
+                <h4 class="report">发现酷玩</h4>
+                <a class="a4 more" href="#">查看更多
+                    <img src="../resource/img/readMore.png" alt="">
+                </a>
+                <div class="k">
+                    <div class="kp">
+                        <img class="k-img" src="../resource/img/k1.jpg" alt="">
+                        <div class="k-text1">SCiO微型光谱仪</div>
+                        <div class="k-text2">可以测定食物成分及营养</div>
+                        <div class="decri">
+                            <div class="k-price">¥1212</div>
+                            <div class="xr">
+                            <img style="width: 15px;height: 15px" src="../resource/img/xinRedo.png" alt=""><span style="font-size: 15px;color: lightgray">3</span>
+                            <img style="width: 15px;height: 15px" src="../resource/img/reply.png" alt=""><span style="font-size: 15px;color: lightgray">3</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="kp">
+                        <img class="k-img" src="../resource/img/k2.jpg" alt="">
+                        <div class="k-text1">B&O BeoSound 35 音响</div>
+                        <div class="k-text2">支持所有音乐流媒体服务</div>
+                        <div class="decri">
+                            <span class="k-price">¥1212</span>
+                            <span class="xr">
+                            <img style="width: 15px;height: 15px" src="../resource/img/xinRedo.png" alt=""><span style="font-size: 15px;color: lightgray">3</span>
+                            <img style="width: 15px;height: 15px" src="../resource/img/reply.png" alt=""><span style="font-size: 15px;color: lightgray">3</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="kp">
+                        <img class="k-img" src="../resource/img/k3.jpg" alt="">
+                        <div class="k-text1">Mozbii触控吸色笔</div>
+                        <div class="k-text2">能吸取65000种颜色</div>
+                        <div class="decri">
+                            <span class="k-price">¥1212</span>
+                            <span class="xr">
+                            <img style="width: 15px;height: 15px" src="../resource/img/xinRedo.png" alt=""><span style="font-size: 15px;color: lightgray">3</span>
+                            <img style="width: 15px;height: 15px" src="../resource/img/reply.png" alt=""><span style="font-size: 15px;color: lightgray">3</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="kp">
+                        <img class="k-img" src="../resource/img/k4.jpg" alt="">
+                        <div class="k-text1"> XPLORER 2 航拍飞行器</div>
+                        <div class="k-text2">搭载自动避障系统</div>
+                        <div class="decri">
+                            <span class="k-price">¥1212</span>
+                            <span class="xr">
+                            <img style="width: 15px;height: 15px" src="../resource/img/xinRedo.png" alt=""><span style="font-size: 15px;color: lightgray">3</span>
+                            <img style="width: 15px;height: 15px" src="../resource/img/reply.png" alt=""><span style="font-size: 15px;color: lightgray">3</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="kp">
+                        <img class="k-img" src="../resource/img/k1.jpg" alt="">
+                        <div class="k-text1">SCiO微型光谱仪</div>
+                        <div class="k-text2">可以测定食物成分及营养</div>
+                        <div class="decri">
+                            <div class="k-price">¥1212</div>
+                            <div class="xr">
+                                <img style="width: 15px;height: 15px" src="../resource/img/xinRedo.png" alt=""><span style="font-size: 15px;color: lightgray">3</span>
+                                <img style="width: 15px;height: 15px" src="../resource/img/reply.png" alt=""><span style="font-size: 15px;color: lightgray">3</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="kp">
+                        <img class="k-img" src="../resource/img/k2.jpg" alt="">
+                        <div class="k-text1">B&O BeoSound 35 音响</div>
+                        <div class="k-text2">支持所有音乐流媒体服务</div>
+                        <div class="decri">
+                            <span class="k-price">¥1212</span>
+                            <span class="xr">
+                            <img style="width: 15px;height: 15px" src="../resource/img/xinRedo.png" alt=""><span style="font-size: 15px;color: lightgray">3</span>
+                            <img style="width: 15px;height: 15px" src="../resource/img/reply.png" alt=""><span style="font-size: 15px;color: lightgray">3</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="kp">
+                        <img class="k-img" src="../resource/img/k3.jpg" alt="">
+                        <div class="k-text1">Mozbii触控吸色笔</div>
+                        <div class="k-text2">能吸取65000种颜色</div>
+                        <div class="decri">
+                            <span class="k-price">¥1212</span>
+                            <span class="xr">
+                            <img style="width: 15px;height: 15px" src="../resource/img/xinRedo.png" alt=""><span style="font-size: 15px;color: lightgray">3</span>
+                            <img style="width: 15px;height: 15px" src="../resource/img/reply.png" alt=""><span style="font-size: 15px;color: lightgray">3</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="kp">
+                        <img class="k-img" src="../resource/img/k4.jpg" alt="">
+                        <div class="k-text1"> XPLORER 2 航拍飞行器</div>
+                        <div class="k-text2">搭载自动避障系统</div>
+                        <div class="decri">
+                            <span class="k-price">¥1212</span>
+                            <span class="xr">
+                            <img style="width: 15px;height: 15px" src="../resource/img/xinRedo.png" alt=""><span style="font-size: 15px;color: lightgray">3</span>
+                            <img style="width: 15px;height: 15px" src="../resource/img/reply.png" alt=""><span style="font-size: 15px;color: lightgray">3</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="kp">
+                        <img class="k-img" src="../resource/img/k1.jpg" alt="">
+                        <div class="k-text1">SCiO微型光谱仪</div>
+                        <div class="k-text2">可以测定食物成分及营养</div>
+                        <div class="decri">
+                            <div class="k-price">¥1212</div>
+                            <div class="xr">
+                                <img style="width: 15px;height: 15px" src="../resource/img/xinRedo.png" alt=""><span style="font-size: 15px;color: lightgray">3</span>
+                                <img style="width: 15px;height: 15px" src="../resource/img/reply.png" alt=""><span style="font-size: 15px;color: lightgray">3</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="kp">
+                        <img class="k-img" src="../resource/img/k2.jpg" alt="">
+                        <div class="k-text1">B&O BeoSound 35 音响</div>
+                        <div class="k-text2">支持所有音乐流媒体服务</div>
+                        <div class="decri">
+                            <span class="k-price">¥1212</span>
+                            <span class="xr">
+                            <img style="width: 15px;height: 15px" src="../resource/img/xinRedo.png" alt=""><span style="font-size: 15px;color: lightgray">3</span>
+                            <img style="width: 15px;height: 15px" src="../resource/img/reply.png" alt=""><span style="font-size: 15px;color: lightgray">3</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="kp">
+                        <img class="k-img" src="../resource/img/k3.jpg" alt="">
+                        <div class="k-text1">Mozbii触控吸色笔</div>
+                        <div class="k-text2">能吸取65000种颜色</div>
+                        <div class="decri">
+                            <span class="k-price">¥1212</span>
+                            <span class="xr">
+                            <img style="width: 15px;height: 15px" src="../resource/img/xinRedo.png" alt=""><span style="font-size: 15px;color: lightgray">3</span>
+                            <img style="width: 15px;height: 15px" src="../resource/img/reply.png" alt=""><span style="font-size: 15px;color: lightgray">3</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="kp">
+                        <img class="k-img" src="../resource/img/k4.jpg" alt="">
+                        <div class="k-text1"> XPLORER 2 航拍飞行器</div>
+                        <div class="k-text2">搭载自动避障系统</div>
+                        <div class="decri">
+                            <span class="k-price">¥1212</span>
+                            <span class="xr">
+                            <img style="width: 15px;height: 15px" src="../resource/img/xinRedo.png" alt=""><span style="font-size: 15px;color: lightgray">3</span>
+                            <img style="width: 15px;height: 15px" src="../resource/img/reply.png" alt=""><span style="font-size: 15px;color: lightgray">3</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="kp">
+                        <img class="k-img" src="../resource/img/k1.jpg" alt="">
+                        <div class="k-text1">SCiO微型光谱仪</div>
+                        <div class="k-text2">可以测定食物成分及营养</div>
+                        <div class="decri">
+                            <div class="k-price">¥1212</div>
+                            <div class="xr">
+                                <img style="width: 15px;height: 15px" src="../resource/img/xinRedo.png" alt=""><span style="font-size: 15px;color: lightgray">3</span>
+                                <img style="width: 15px;height: 15px" src="../resource/img/reply.png" alt=""><span style="font-size: 15px;color: lightgray">3</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="kp">
+                        <img class="k-img" src="../resource/img/k2.jpg" alt="">
+                        <div class="k-text1">B&O BeoSound 35 音响</div>
+                        <div class="k-text2">支持所有音乐流媒体服务</div>
+                        <div class="decri">
+                            <span class="k-price">¥1212</span>
+                            <span class="xr">
+                            <img style="width: 15px;height: 15px" src="../resource/img/xinRedo.png" alt=""><span style="font-size: 15px;color: lightgray">3</span>
+                            <img style="width: 15px;height: 15px" src="../resource/img/reply.png" alt=""><span style="font-size: 15px;color: lightgray">3</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="kp">
+                        <img class="k-img" src="../resource/img/k3.jpg" alt="">
+                        <div class="k-text1">Mozbii触控吸色笔</div>
+                        <div class="k-text2">能吸取65000种颜色</div>
+                        <div class="decri">
+                            <span class="k-price">¥1212</span>
+                            <span class="xr">
+                            <img style="width: 15px;height: 15px" src="../resource/img/xinRedo.png" alt=""><span style="font-size: 15px;color: lightgray">3</span>
+                            <img style="width: 15px;height: 15px" src="../resource/img/reply.png" alt=""><span style="font-size: 15px;color: lightgray">3</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="kp">
+                        <img class="k-img" src="../resource/img/k4.jpg" alt="">
+                        <div class="k-text1"> XPLORER 2 航拍飞行器</div>
+                        <div class="k-text2">搭载自动避障系统</div>
+                        <div class="decri">
+                            <span class="k-price">¥1212</span>
+                            <span class="xr">
+                            <img style="width: 15px;height: 15px" src="../resource/img/xinRedo.png" alt=""><span style="font-size: 15px;color: lightgray">3</span>
+                            <img style="width: 15px;height: 15px" src="../resource/img/reply.png" alt=""><span style="font-size: 15px;color: lightgray">3</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <a class="a5" href="###">
+                    <img src="../resource/img/more.png" alt="">
+                    <span style="color: red;font-size: 18px">点击加载更多</span>
+                </a>
+            </div>
+        </div>
+        <!-- END-->
+        <div class="outer7">
+            <div class="center7">
+                <div class="up">
+                    <img class="QR" src="../resource/img/code.png" alt="">
+                    <div class="up2">
+                        <img style="width: 100px;height: 42px" src="../resource/img/logoImg.jpg" alt="">
+                        <div style="font-size: 12px">
+                            <div style="margin-top:20px">全球酷玩试用导购平台</div>
+                            <div>酷·新奇·好玩·品质</div>
+                            <div style="margin-top:20px">微信添加“JguoJguo”</div>
+                            <div>获取我们的服务</div>
+                        </div>
+                    </div>
+                    <div class="up3">
+                        <div style="font-size: 20px;color: white;margin-bottom: 2px">免费试用</div><br>
+                        <a class="a7" href="#">试用流程</a><br>
+                        <a class="a7" href="#">如何提高成功率</a><br>
+                    </div>
+                    <div class="up4">
+                        <div style="font-size: 20px;color: white;margin-bottom: 2px">友情链接</div><br>
+                        <div class="up4l">
+                            <a class="a7" href="#">智东西</a><br>
+                            <a class="a7" href="#">搜狐IT</a><br>
+                            <a class="a7" href="#">搜狐数码</a><br>
+                            <a class="a7" href="#">凤凰数码</a><br>
+                            <a class="a7" href="#">泡泡网</a><br>
+                            <a class="a7" href="#">ZUK社区</a><br>
+                            <a class="a7" href="#">极客公园</a><br>
+                            <a class="a7" href="#">果库</a><br>
+                        </div>
+                        <div class="up4r">
+                            <a class="a7" href="#">WEIBUSI</a><br>
+                            <a class="a7" href="#">腾讯科技</a><br>
+                            <a class="a7" href="#">凤凰科技</a><br>
+                            <a class="a7" href="#">PColine</a><br>
+                            <a class="a7" href="#">3W咖啡</a><br>
+                            <a class="a7" href="#">亿觅emie</a><br>
+                            <a class="a7" href="#">易迅易启玩</a><br>
+                        </div>
+                    </div>
+                    <div class="up5">
+                        <div style="font-size: 20px;color: white;margin-bottom: 2px">购买攻略</div><br>
+                        <a class="a7" href="#">美亚海淘教程</a><br>
+                        <a class="a7" href="#">日亚海淘教程</a><br>
+                        <a class="a7" href="#">海淘转运攻略</a><br>
+                        <a class="a7" href="#">kickstarter众筹购买攻略</a><br>
+                        <a class="a7" href="#">indiegogo众筹购买攻略</a><br>
+                    </div>
+                    <div class="up6">
+                        <div style="font-size: 20px;color: white;margin-bottom: 2px">厂商合作</div><br>
+                        <a class="a7" href="#">关于极果</a><br>
+                        <a class="a7" href="#">联系我们</a><br>
+                        <a class="a7" href="#">商务合作：BD@jiguo.com</a><br>
+                        <a class="a7" href="#">CEO邮箱：CEO@jiguo.com</a><br>
+                    </div>
+                </div>
+                <div class="down">
+                    <a href="#">
+                    <img class="back" src="../resource/img/back.png" alt="">
+                    </a>
+                </div>
+                <div class="lowest">©2016极果版权所有</div>
+            </div>
+        </div>
+</body>
+</html>
